@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-dark-color);
+
+  }
+
+  .logo__prefix {
+    color: var(--primary-decor-color);
+  }
+  
+  .header__logo {
+    margin-right: 94px;
+  }
+  
+  .footer__logo {
+    margin-bottom: 28px;
+    color: var(--white-color);
+  }
+  
