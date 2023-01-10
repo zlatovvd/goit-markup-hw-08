@@ -1,18 +1,84 @@
 .hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/hero-mobile.jpg);
+  background-size: cover;
+  background-color: var(--secondary-dark-color);
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-devixe-pixel-ratio: 2), (min-resolurion: 192dpi), (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero.jpg);
-    background-size: cover;
-    background-color: var(--secondary-dark-color);
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url(../../images/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/hero-tablet.jpg);
+    max-width: 768px;
   }
 
+  @media (min-devixe-pixel-ratio: 2), (min-resolurion: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url(../../images/hero-tablet@2x.jpg);
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/hero.jpg);
+    max-width: 1200px;
+  }
+
+  @media (min-devixe-pixel-ratio: 2), (min-resolurion: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url(../../images/hero@2x.jpg);
+    }
+  }
+
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -26,10 +92,11 @@
     margin-right: auto;
     color: var(--white-color);
   }
+
+}
   
-  
-  .hero__btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.hero__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

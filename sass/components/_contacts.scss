@@ -1,12 +1,16 @@
-.contacts {
-    display: flex;
-    margin-left: auto;
+@media screen and(max-width: 767px) {
+  .contacts {
+    display: none
   }
-  
+}
+
+
+@media screen and (min-width: 768px) {
+
   .contscts__item:not(:last-child) {
-    margin-right: 40px;
+    margin-bottom: 10px;
   }
-  
+
   .contacts__link {
     display: flex;
     align-items: center;
@@ -35,3 +39,17 @@
     }
 
   }
+}
+
+@media screen and (min-width:1200px) {
+  .contacts {
+    display: flex;
+  }
+
+  .contscts__item:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+    
+}
+  

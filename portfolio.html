@@ -21,15 +21,18 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+
     <header class="header">
-      <div class="header-container container">
+      <div class="header__container container">
+        <a class="logo link header__logo" href="./index.html"
+            ><span class="logo__prefix">Web</span>Studio</a>
         <nav class="nav">
-          <a class="logo link header__logo" href="./index.html"
-            ><span class="logo__prefix">Web</span>Studio</a
-          >
+          
           <ul class="nav-list list">
             <li class="nav-list__item">
-              <a class="nav-list__link link" href="./index.html">Студія</a>
+              <a class="nav-list__link link" href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link link active-page" href="./portfolio.html"
@@ -62,6 +65,65 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu__open-btn" data-menu-open>
+          <svg height="40" width="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container container">
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>  
+          
+          <ul class="menu-contacts list">
+            <li class="menu-contscts__item">
+              <a class="phone menu-contacts__link link" 
+                href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="menu-contscts__item">
+              <a class="mail menu-contacts__link link"
+                href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>  
+          </ul>
+          <ul class="menu-social__list list">
+            <li class="menu-social__item">
+              <a class="menu-social__link link" href="">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link link" href="">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link link" href="">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        
+          <button type="button" class="menu__close-btn" data-menu-close>
+            <svg height="18" width="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -93,11 +155,16 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-1.webp 1x, ./images/portfolio-1@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-1.jpg" alt="Технокряк"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -113,11 +180,16 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-2.webp 1x, ./images/portfolio-2@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-2.jpg" alt="Постер New Orlean vs Golden Star"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -135,11 +207,15 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-3.webp 1x, ./images/portfolio-3@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-3.jpg" alt="Ресторан Seafood"/>
+                  </picture>                                     
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -155,11 +231,15 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio4.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-4.webp 1x, ./images/portfolio-4@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-4.jpg" alt="Проєкт Prime"/>
+                  </picture>                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -175,11 +255,16 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio5.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-5.webp 1x, ./images/portfolio-5@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-5.jpg" alt="Проєкт Boxes"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -195,11 +280,16 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-6.webp 1x, ./images/portfolio-6@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-6.jpg" alt="Inspiration has no Borders"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -215,11 +305,16 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio7.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-7.webp 1x, ./images/portfolio-7@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-7.jpg 1x, ./images/portfolio-7@2x.jpg 2x"/>
+  
+                      <img src="./images/portfolio-7.jpg" alt="Видання Limited Edition"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -235,11 +330,15 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio8.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-8.webp 1x, ./images/portfolio-8@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-8.jpg 1x, ./images/portfolio-8@2x.jpg 2x"/>  
+                    <img src="./images/portfolio-8.jpg" alt="Проєкт LAB"/>
+                  </picture> 
+                  
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -255,11 +354,15 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source 
+                      srcset="./images/portfolio-9.webp 1x, ./images/portfolio-9@2x.webp 2x" 
+                        type="image/webp" />
+                    <source 
+                      srcset="./images/portfolio-9.jpg 1x, ./images/portfolio-9@2x.jpg 2x"/>
+  
+                    <img src="./images/portfolio-9.jpg" alt="Growing Business"/>
+                  </picture>                   
                   <div class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -278,7 +381,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+       <div class="container footer-container">
         <div class="footer-contacts">
           <a class="logo link footer__logo" href="./index.html"
             ><span class="logo__prefix">Web</span>Studio</a
@@ -343,6 +446,7 @@
         </form>
       </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

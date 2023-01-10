@@ -1,4 +1,10 @@
 .about {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
     padding-top: 0;
   }
   
@@ -33,4 +39,5 @@
     letter-spacing: 0.03em;
     color: var(--white-color);
     background: rgba(47, 48, 58, 0.8);
-  }
+  }  
+}

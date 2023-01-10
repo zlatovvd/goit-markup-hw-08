@@ -2,20 +2,35 @@
     display: block;
     font-family: var(--secondary-font-family);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-dark-color);
+}
 
-  }
-
-  .logo__prefix {
+.logo__prefix {
     color: var(--primary-decor-color);
-  }
+}
+
+// @media screen and (min-width: 768px) {
+//     .header__logo {
+//         margin-right: 88px;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .logo {
+//         font-size: 26px;
+//         line-height: 1.19;       
+//     }
+
+//     .header__logo {
+//         margin-right: 94px;
+//     }
+// }
+
+ 
   
-  .header__logo {
-    margin-right: 94px;
-  }
   
   .footer__logo {
     margin-bottom: 28px;
