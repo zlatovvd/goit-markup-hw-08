@@ -1,24 +1,22 @@
-@media screen and (max-width: 767px) {
-  .nav-list {
-    display:none;
-  }
-  
-  .menu__open-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-left: auto;
-    line-height: 0;
-    fill: var(--secondary-text-color);
-  }
-  
-  .menu__open-btn:hover,
-  .menu__open-btn:focus {
-    fill: var(--primary-decor-color);
-  }
-    
+.nav-list {
+  display:none;
 }
 
+.menu__open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  line-height: 0;
+  fill: var(--secondary-text-color);
+}
+
+.menu__open-btn:hover,
+.menu__open-btn:focus {
+  fill: var(--primary-decor-color);
+}
+
+ 
 @media screen and (min-width: 768px) {
   
   .nav {

@@ -1,11 +1,12 @@
-@media screen and(max-width: 767px) {
-  .contacts {
-    display: none
-  }
+.contacts {
+  display: none
 }
 
-
 @media screen and (min-width: 768px) {
+
+  .contacts {
+    display: block;
+  }
 
   .contscts__item:not(:last-child) {
     margin-bottom: 10px;
