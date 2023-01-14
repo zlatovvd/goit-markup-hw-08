@@ -1,10 +1,10 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  overflow: auto;
+  //overflow: auto;
 }
 
-@media screen and  (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin-left: auto;
@@ -21,5 +21,15 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
