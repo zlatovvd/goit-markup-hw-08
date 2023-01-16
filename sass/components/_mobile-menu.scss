@@ -1,10 +1,9 @@
 .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -39,12 +38,12 @@
 
 .mobile-menu__container {
     position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
     padding: 48px 40px;
 }
 
-.mobile-menu__list {
-    margin-bottom: 306px;
-}
 
 .mobile-menu__item {
     margin-bottom: 32px;
@@ -63,6 +62,9 @@
     }
 }
 
+.menu-contacts {
+    margin-top: auto;
+}
 
 .menu-contscts__item {
     &:not(:last-child) {

@@ -18,8 +18,9 @@
 
 .modal {
   position: absolute;
-  width: 450px;
-  padding: 40px;
+  width: 100vw;
+  //height: 100vh;
+  padding: 30px;
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%);
@@ -37,9 +38,24 @@
 
 }
 
+@media screen and (max-width: 360px) {
+  .modal {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+    padding: 40px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    min-height: 581px;
   }  
 }
   
